@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="/submit" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <p>Query Type</p>
+        <input type="radio" id="general" name="queryType" value="general" checked>
+        <label for="general">General Query</label>
+        <input type="radio" id="support" name="queryType" value="technical">
+        <label for="technical">Support Query</label>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I consent to the processing of my data</label> 
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
