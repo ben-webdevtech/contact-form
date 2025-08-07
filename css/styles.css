@@ -4,16 +4,18 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
+    color: #2b4246;
 
 }
 
 .container {
-    max-width: 500px;
+    max-width: 680px;
     margin: 50px auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
 }
 
 h1 {
@@ -44,29 +46,56 @@ form {
 .name-inputs .radio-group {
     flex: 1;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #2b4246;
     padding: 10px 20px;
     border-radius: 10px;
+    background-color: #f0f0f0;
 
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    border: 1px solid #ccc;
+    border: .5px solid #2b4246;
     border-radius: 5px;
     padding: 10px 15px;
     width: 100%;
     font-family: "Karla", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    color: hsl(188, 20%, 23%);
 }
 
 button {
-    background-color: #007bff;
+    background-color: #0C7D69;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+button:hover {
+    background-color: #0A6B5C;
+}
+
+label {
+    font-weight: 400;
+    padding: 5;
+}
+
+textarea {
+  resize: none;
+  overflow: auto; /* or hidden, depending on your need */
+}
+
+
+
+@media (max-width: 600px) {
+    .name-inputs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 20 px;
+    }
 }
